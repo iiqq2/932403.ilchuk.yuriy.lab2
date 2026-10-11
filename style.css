@@ -149,12 +149,13 @@ input, textarea {
   font: inherit;
 }
 input::placeholder, textarea::placeholder { color: var(--placeholder); opacity: 1; }
-/* Белая середина и градиентная рамка в цветах выбранного языка. */
+/* Контуры отделяют белые участки градиента от белого фона поля. */
 input:focus, textarea:focus {
   border-color: transparent;
   background: linear-gradient(var(--accent), var(--accent)) padding-box, var(--focus-border) border-box;
+  box-shadow: inset 0 0 0 1px var(--link);
   outline: 2px solid var(--link);
-  outline-offset: 3px;
+  outline-offset: 0;
 }
 textarea { min-height: 140px; resize: vertical; }
 button {
