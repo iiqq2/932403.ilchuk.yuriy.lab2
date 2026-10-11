@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебная страница Юрия Ильчука: языковой энтузиаст и переводчик. Лабораторная работа №2, вариант 17.">
+  <title>О себе — Юрий Ильчук | Лабораторная №2</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #skills ul { text-align: left; }
+  </style>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>О себе — Юрий Ильчук</h1>
+    <p>Группа 932403. Языковой энтузиаст и переводчик.</p>
+    <p>Эта страница посвящена переводу, изучению английского и общению между культурами.</p>
+    <div class="portrait">
+      <img src="images/avatar.svg" alt="Иллюстрированный аватар языкового энтузиаста с книгой" width="320" height="320">
+      <span class="language-badge" lang="en">EN</span>
+    </div>
+    <nav aria-label="Разделы страницы">
+      <a href="#skills">Навыки</a> |
+      <a href="#projects">Проекты</a> |
+      <a href="#contact">Обратная связь</a>
+    </nav>
+    <div class="language-switch" role="group" aria-label="Языковое оформление">
+      <span>Оформление:</span>
+      <button type="button" data-language="ru" aria-pressed="true" aria-label="Русское оформление">RU</button>
+      <button type="button" data-language="en" aria-pressed="false" aria-label="Английское оформление">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="skills">
+      <h2>Навыки</h2>
+      <ul>
+        <li><strong>Перевод текстов:</strong> передача смысла, тона и культурного контекста оригинала.</li>
+        <li><strong>Изучение английского:</strong> работа со словарём, грамматикой и произношением.</li>
+        <li><strong>Межкультурная коммуникация:</strong> уважение к традициям и особенностям общения.</li>
+        <li><strong>Редактирование:</strong> проверка ясности, точности и естественности перевода.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Проекты</h2>
+      <ol>
+        <li>Составление переводов подкастов YouTube-канала Ruri Ohama.</li>
+        <li>Улучшение и тренировка AI-перевода в <a href="https://translate.yandex.com/" target="_blank" rel="noopener noreferrer">Yandex Translate</a>.</li>
+        <li>Разметка для модели проекта EngCLI.</li>
+      </ol>
+      <h3 id="engcli">О проекте EngCLI</h3>
+      <p>EngCLI — приложение, работающее в терминале. С помощью локальной модели оно определяет уровень вашего английского. Вы передаёте приложению ссылку на ролик на YouTube, а оно создаёт и сохраняет карточки Anki по содержанию видео — только те, которые релевантны вашему уровню английского.</p>
+    </section>
+
+    <aside>
+      <h2>Язык, который изучаю</h2>
+      <p>Английский. Развиваю понимание речи, словарный запас и точность перевода.</p>
+      <p>Для изучения английского использую видео, подкасты и карточки Anki. Подробнее — в <a href="#engcli">описании EngCLI</a>.</p>
+    </aside>
+
+    <h2 id="contact">Обратная связь</h2>
+    <form action="#" method="post" style="flex-direction: column;">
+      <p>
+        <label for="name">Имя</label><br>
+        <input id="name" type="text" name="name" placeholder="Ваше имя" required>
+      </p>
+      <p>
+        <label for="email">Email</label><br>
+        <input id="email" type="email" name="email" placeholder="you@example.com" required>
+      </p>
+      <p>
+        <label for="message">Сообщение</label><br>
+        <textarea id="message" name="message" placeholder="Какой проект хотите обсудить?" rows="5" cols="40" required></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+  </main>
+</body>
+</html>
