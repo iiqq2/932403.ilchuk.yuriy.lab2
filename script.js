@@ -84,7 +84,5 @@ function applyLanguageTheme(button) {
 }
 
 languageButtons.forEach((button) => {
-  button.addEventListener('pointerenter', () => applyLanguageTheme(button));
-  button.addEventListener('focus', () => applyLanguageTheme(button));
   button.addEventListener('click', () => applyLanguageTheme(button));
 });
